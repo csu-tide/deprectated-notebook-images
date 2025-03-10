@@ -1,4 +1,4 @@
-name: astro_v1_5-base
+name: /home/jovyan/astro_v1_5-base
 channels:
   - conda-forge
 dependencies:
@@ -441,4 +441,4 @@ dependencies:
   - zstd=1.5.5=hfc55251_0
   - pip:
       - fsps==0.4.6
-prefix: /opt/conda/envs/astro_v1_5-base
+prefix: /home/jovyan/astro_v1_5-base

@@ -1,4 +1,4 @@
-name: kaya_v1_1-base
+name: /home/jovyan/kaya_v1_1-base
 channels:
   - conda-forge
 dependencies:
@@ -533,4 +533,4 @@ dependencies:
       - werkzeug==3.0.0
       - wrapt==1.15.0
       - wsproto==1.2.0
-prefix: /opt/conda/envs/kaya_v1_1-base
+prefix: /home/jovyan/kaya_v1_1-base

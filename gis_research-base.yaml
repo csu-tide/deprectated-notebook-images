@@ -1,4 +1,4 @@
-name: gis_research-base
+name: /home/jovyan/gis_research-base
 channels:
   - conda-forge
 dependencies:
@@ -708,4 +708,4 @@ dependencies:
       - weasel==0.3.2
       - werkzeug==3.0.0
       - wrapt==1.15.0
-prefix: /opt/conda/envs/gis_research-base
+prefix: /home/jovyan/gis_research-base

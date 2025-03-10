@@ -1,4 +1,4 @@
-name: r-studio_v1_3-base
+name: /home/jovyan/r-studio_v1_3-base
 channels:
   - conda-forge
 dependencies:
@@ -477,4 +477,4 @@ dependencies:
       - multidict==6.0.4
       - simpervisor==1.0.0
       - yarl==1.9.2
-prefix: /opt/conda/envs/r-studio_v1_3-base
+prefix: /home/jovyan/r-studio_v1_3-base

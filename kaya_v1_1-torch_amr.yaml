@@ -1,4 +1,4 @@
-name: torch_amr
+name: /home/jovyan/torch_amr
 channels:
   - stellargraph
   - pytorch
@@ -351,4 +351,4 @@ dependencies:
       - transformers==4.30.2
       - wcwidth==0.2.6
       - xmltodict==0.13.0
-prefix: /opt/conda/envs/torch_amr
+prefix: /home/jovyan/torch_amr

@@ -1,4 +1,4 @@
-name: prp_v1_3-base
+name: /home/jovyan/prp_v1_3-base
 channels:
   - conda-forge
 dependencies:
@@ -532,4 +532,4 @@ dependencies:
       - werkzeug==3.0.0
       - wrapt==1.15.0
       - wsproto==1.2.0
-prefix: /opt/conda/envs/prp_v1_3-base
+prefix: /home/jovyan/prp_v1_3-base

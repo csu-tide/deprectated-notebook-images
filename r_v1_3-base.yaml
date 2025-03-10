@@ -1,4 +1,4 @@
-name: r_v1_3-base
+name: /home/jovyan/r_v1_3-base
 channels:
   - conda-forge
 dependencies:
@@ -485,4 +485,4 @@ dependencies:
   - zlib=1.2.13=hd590300_5
   - zstandard=0.19.0=py311hd4cff14_0
   - zstd=1.5.5=hfc55251_0
-prefix: /opt/conda/envs/r_v1_3-base
+prefix: /home/jovyan/r_v1_3-base
