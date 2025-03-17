@@ -41,7 +41,7 @@ mamba env create -f [environment].yaml -p ~/[env-name]
 ```
 - I.E.: `mamba env create -f scipy_v1_3-base.yaml -p ~/scipy_v1_3`
 - *Note*: We recommend mamba over conda for environment creation due to is speedier dependency solver
-4. Address issues as they arise, repeating step 1 as appropriate
+4. Address issues as they arise, repeating step 3 as appropriate
     - *Note*: This may involve updating and/or removing packages from the environment file
 5. If the conda environment is created, and pip is the only issue, then activate the new environment via:
 ```bash
