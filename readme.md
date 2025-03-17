@@ -31,22 +31,22 @@ Follow these steps to try recreating the conda environment from the relevant env
     - *Note*: We recommend referring to ours docs on [environment management](https://csu-tide.github.io/jupyterhub/environment-management)
 
 1. Download the environment file for the image you wish to use into your JupyterHub home directory
-1. Activate your base environment:
+2. Activate your base environment:
 ```bash
 source activate base
 ```
-1. Recreate the environment from file:
+3. Recreate the environment from file:
 ```bash
 mamba env create -f environment.yaml -p ~/[env-name]
 ```
-    - *Note*: We recommend mamba over conda for environment creation due to is speedier dependency solver
-1. Address issues as they arise, repeating step 1 as appropriate
+- *Note*: We recommend mamba over conda for environment creation due to is speedier dependency solver
+4. Address issues as they arise, repeating step 1 as appropriate
     - *Note*: This may involve updating and/or removing packages from the environment file
-1. If the conda environment is created, and pip is the only issue, then activate the new environment via:
+5. If the conda environment is created, and pip is the only issue, then activate the new environment via:
 ```bash
 conda activate ~/[env-name]
 ``` 
-1. Continue troubleshooting pip issues from inside the environment
+6. Continue troubleshooting pip issues from inside the environment
 
 ## Deprecated as of JupyterHub release 2025-03-13
 | Display Name                  | Env File(s)                                        | Image URL                                                                                             |
