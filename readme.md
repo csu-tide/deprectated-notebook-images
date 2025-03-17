@@ -27,8 +27,8 @@ Follow these steps to run a deprecated notebook container image as an interactiv
 
 ### Recreating conda environments from deprecated notebook container images
 Follow these steps to try recreating the conda environment from the relevant environment file.
-- *Note*: This option is not guaranteed to work as software may no longer be available from the relevant package repositories
-- *Note*: We recommend referring to ours docs on [environment management](https://csu-tide.github.io/jupyterhub/environment-management)
+    - *Note*: This option is not guaranteed to work as software may no longer be available from the relevant package repositories
+    - *Note*: We recommend referring to ours docs on [environment management](https://csu-tide.github.io/jupyterhub/environment-management)
 
 1. Download the environment file for the image you wish to use into your JupyterHub home directory
 1. Activate your base environment:
@@ -39,9 +39,9 @@ source activate base
 ```bash
 mamba env create -f environment.yaml -p ~/[env-name]
 ```
-- *Note*: We recommend mamba over conda for environment creation due to is speedier dependency solver
+    - *Note*: We recommend mamba over conda for environment creation due to is speedier dependency solver
 1. Address issues as they arise, repeating step 1 as appropriate
-- *Note*: This may involve updating and/or removing packages from the environment file
+    - *Note*: This may involve updating and/or removing packages from the environment file
 1. If the conda environment is created, and pip is the only issue, then activate the new environment via:
 ```bash
 conda activate ~/[env-name]
