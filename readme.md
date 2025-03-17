@@ -30,24 +30,25 @@ Follow these steps to try recreating the conda environment from the relevant env
     - *Note*: This option is not guaranteed to work as software may no longer be available from the relevant package repositories
     - *Note*: We recommend referring to ours docs on [environment management](https://csu-tide.github.io/jupyterhub/environment-management)
 
-1. Download the environment file for the image you wish to use into your JupyterHub home directory
-2. Activate your base environment:
+1. From JupyterHub, start your notebook server with the provided Kube notebook image as this contains the nb_conda_kernels package which allows using custom conda environments with JupyterLab
+2. Download the environment file for the image you wish to use into your JupyterHub home directory
+3. Activate your base environment:
 ```bash
 source activate base
 ```
-3. Recreate the environment from file:
+4. Recreate the environment from file:
 ```bash
 mamba env create -f [environment].yaml -p ~/[env-name]
 ```
 - I.E.: `mamba env create -f scipy_v1_3-base.yaml -p ~/scipy_v1_3`
 - *Note*: We recommend mamba over conda for environment creation due to is speedier dependency solver
-4. Address issues as they arise, repeating step 3 as appropriate
+5. Address issues as they arise, repeating step 4 as appropriate
     - *Note*: This may involve updating and/or removing packages from the environment file
-5. If the conda environment is created, and pip is the only issue, then activate the new environment via:
+6. If the conda environment is created, and pip is the only issue, then activate the new environment via:
 ```bash
 conda activate ~/[env-name]
 ``` 
-6. Continue troubleshooting pip issues from inside the environment
+7. Continue troubleshooting pip issues from inside the environment
 
 ## Deprecated as of JupyterHub release 2025-03-13
 | Display Name                  | Env File(s)                                        | Image URL                                                                                             |
