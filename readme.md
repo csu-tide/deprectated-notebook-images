@@ -37,8 +37,9 @@ source activate base
 ```
 3. Recreate the environment from file:
 ```bash
-mamba env create -f environment.yaml -p ~/[env-name]
+mamba env create -f [environment].yaml -p ~/[env-name]
 ```
+- I.E.: `mamba env create -f scipy_v1_3-base.yaml -p ~/scipy_v1_3`
 - *Note*: We recommend mamba over conda for environment creation due to is speedier dependency solver
 4. Address issues as they arise, repeating step 1 as appropriate
     - *Note*: This may involve updating and/or removing packages from the environment file
